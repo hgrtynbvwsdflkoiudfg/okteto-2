@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: shouit
+  name: hoution
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "shouit"
+  - name: "hoution"
     port: 8080
   selector:
-    app: shouit
+    app: hoution
