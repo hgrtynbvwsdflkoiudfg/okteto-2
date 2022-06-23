@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: upgreat
+  name: shouit
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "upgreat"
+  - name: "shouit"
     port: 8080
   selector:
-    app: upgreat
+    app: shouit
