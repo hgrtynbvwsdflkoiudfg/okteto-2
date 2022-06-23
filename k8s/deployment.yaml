@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: yerctvio
+  name: upgreat
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: yerctvio
+      app: upgreat
   template:
     metadata:
       labels:
-        app: yerctvio
+        app: upgreat
     spec:
       containers:
-      - image: okteto.dev/yerctvio:latest
-        name: yerctvio
+      - image: okteto.dev/upgreat:latest
+        name: upgreat
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "icook.tw"
+          value: "www.crazygames.com"
         - name: Vless_UUID
-          value: "31126297-406e-4935-b170-01195107310b"
+          value: "35445f8a-2177-4aef-83a8-6dc2aa4366c7"
         - name: Vless_Path
-          value: "/gt7ikmnb"
+          value: "/isxu5y9o"
         - name: Vmess_UUID
-          value: "31126297-406e-4935-b170-01195107310b"
+          value: "35445f8a-2177-4aef-83a8-6dc2aa4366c7"
         - name: Vmess_Path
-          value: "/prsHBk"
+          value: "/TYUJ6RT"
         - name: Share_Path
-          value: "/Share921"
+          value: "/Share542"
