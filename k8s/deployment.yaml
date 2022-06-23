@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hoution
+  name: swretiony
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hoution
+      app: swretiony
   template:
     metadata:
       labels:
-        app: hoution
+        app: swretiony
     spec:
       containers:
-      - image: okteto.dev/hoution:latest
-        name: hoution
+      - image: okteto.dev/swretiony:latest
+        name: swretiony
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "www.lenskart.com"
+          value: "www.greenmangaming.com"
         - name: Vless_UUID
-          value: "ef77d9bc-9b14-4460-a5d5-aa5ccf6780c7"
+          value: "d737ba60-0657-4bb0-b936-07c71a4fc3ca"
         - name: Vless_Path
-          value: "/poisdrty"
+          value: "/eB4usdyi"
         - name: Vmess_UUID
-          value: "ef77d9bc-9b14-4460-a5d5-aa5ccf6780c7"
+          value: "d737ba60-0657-4bb0-b936-07c71a4fc3ca"
         - name: Vmess_Path
-          value: "/er7ygokh"
+          value: "/ertjxcvu"
         - name: Share_Path
-          value: "/Share470"
+          value: "/Share423"
