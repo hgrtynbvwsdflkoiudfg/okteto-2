@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: shouit
+  name: hoution
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: shouit
+      app: hoution
   template:
     metadata:
       labels:
-        app: shouit
+        app: hoution
     spec:
       containers:
-      - image: okteto.dev/shouit:latest
-        name: shouit
+      - image: okteto.dev/hoution:latest
+        name: hoution
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "www.canva.com"
+          value: "www.lenskart.com"
         - name: Vless_UUID
-          value: "e55ecbd7-5fa4-4e88-ab02-c7d91f56de06"
+          value: "ef77d9bc-9b14-4460-a5d5-aa5ccf6780c7"
         - name: Vless_Path
-          value: "/sdojt8u2e"
+          value: "/poisdrty"
         - name: Vmess_UUID
-          value: "e55ecbd7-5fa4-4e88-ab02-c7d91f56de06"
+          value: "ef77d9bc-9b14-4460-a5d5-aa5ccf6780c7"
         - name: Vmess_Path
-          value: "/vbnjitgf"
+          value: "/er7ygokh"
         - name: Share_Path
-          value: "/Share360"
+          value: "/Share470"
